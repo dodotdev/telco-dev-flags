@@ -1,0 +1,12 @@
+{
+  "name": "United Arab Emirates",
+  "abbreviation": "AE",
+  "files": {
+    "svg": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ae/ae.svg",
+    "png_48x32": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ae/ae_48x32.png",
+    "png_120x80": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ae/ae_120x80.png",
+    "png_240x160": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ae/ae_240x160.png",
+    "png_480x320": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ae/ae_480x320.png",
+    "png_960x640": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ae/ae_960x640.png"
+  }
+}

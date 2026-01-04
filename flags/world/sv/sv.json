@@ -1,0 +1,12 @@
+{
+  "name": "El Salvador",
+  "abbreviation": "SV",
+  "files": {
+    "svg": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/sv/sv.svg",
+    "png_48x32": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/sv/sv_48x32.png",
+    "png_120x80": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/sv/sv_120x80.png",
+    "png_240x160": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/sv/sv_240x160.png",
+    "png_480x320": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/sv/sv_480x320.png",
+    "png_960x640": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/sv/sv_960x640.png"
+  }
+}

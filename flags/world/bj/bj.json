@@ -1,0 +1,12 @@
+{
+  "name": "Benin",
+  "abbreviation": "BJ",
+  "files": {
+    "svg": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/bj/bj.svg",
+    "png_48x32": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/bj/bj_48x32.png",
+    "png_120x80": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/bj/bj_120x80.png",
+    "png_240x160": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/bj/bj_240x160.png",
+    "png_480x320": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/bj/bj_480x320.png",
+    "png_960x640": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/bj/bj_960x640.png"
+  }
+}

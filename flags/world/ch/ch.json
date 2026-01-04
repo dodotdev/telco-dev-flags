@@ -1,0 +1,12 @@
+{
+  "name": "Switzerland",
+  "abbreviation": "CH",
+  "files": {
+    "svg": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ch/ch.svg",
+    "png_48x32": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ch/ch_48x32.png",
+    "png_120x80": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ch/ch_120x80.png",
+    "png_240x160": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ch/ch_240x160.png",
+    "png_480x320": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ch/ch_480x320.png",
+    "png_960x640": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ch/ch_960x640.png"
+  }
+}

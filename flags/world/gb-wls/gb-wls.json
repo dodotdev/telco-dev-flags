@@ -1,0 +1,12 @@
+{
+  "name": "Wales",
+  "abbreviation": "GB-WLS",
+  "files": {
+    "svg": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/gb-wls/gb-wls.svg",
+    "png_48x32": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/gb-wls/gb-wls_48x32.png",
+    "png_120x80": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/gb-wls/gb-wls_120x80.png",
+    "png_240x160": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/gb-wls/gb-wls_240x160.png",
+    "png_480x320": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/gb-wls/gb-wls_480x320.png",
+    "png_960x640": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/gb-wls/gb-wls_960x640.png"
+  }
+}
