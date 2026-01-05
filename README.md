@@ -1,23 +1,26 @@
-<div align="center">
-
-# flags.telco.dev
-
-### Free Flag Assets for Developers
-
-**327 world and US flags** in SVG and PNG formats, ready to use in your projects.
-
-[![World Flags](https://flags.telco.dev/world/us/us_48x32.png)](world/us/)
-[![World Flags](https://flags.telco.dev/world/gb/gb_48x32.png)](world/gb/)
-[![World Flags](https://flags.telco.dev/world/jp/jp_48x32.png)](world/jp/)
-[![World Flags](https://flags.telco.dev/world/de/de_48x32.png)](world/de/)
-[![World Flags](https://flags.telco.dev/world/fr/fr_48x32.png)](world/fr/)
-[![World Flags](https://flags.telco.dev/world/br/br_48x32.png)](world/br/)
-[![World Flags](https://flags.telco.dev/world/ca/ca_48x32.png)](world/ca/)
-[![World Flags](https://flags.telco.dev/world/au/au_48x32.png)](world/au/)
-
-[World Flags](world/) | [US State Flags](us/) | [Usage Examples](#usage-examples) | [API Reference](#url-pattern)
-
-</div>
+<p align="center">
+  <h1 align="center">flags.telco.dev</h1>
+</p>
+<h3 align="center">Free Flag Assets for Developers</h3>
+<p align="center">
+  <strong>327 world and US flags</strong> in SVG and PNG formats, ready to use in your projects.
+</p>
+<p align="center">
+  <a href="world/us/"><img src="https://flags.telco.dev/world/us/us_48x32.png" alt="US"></a>
+  <a href="world/gb/"><img src="https://flags.telco.dev/world/gb/gb_48x32.png" alt="UK"></a>
+  <a href="world/jp/"><img src="https://flags.telco.dev/world/jp/jp_48x32.png" alt="Japan"></a>
+  <a href="world/de/"><img src="https://flags.telco.dev/world/de/de_48x32.png" alt="Germany"></a>
+  <a href="world/fr/"><img src="https://flags.telco.dev/world/fr/fr_48x32.png" alt="France"></a>
+  <a href="world/br/"><img src="https://flags.telco.dev/world/br/br_48x32.png" alt="Brazil"></a>
+  <a href="world/ca/"><img src="https://flags.telco.dev/world/ca/ca_48x32.png" alt="Canada"></a>
+  <a href="world/au/"><img src="https://flags.telco.dev/world/au/au_48x32.png" alt="Australia"></a>
+</p>
+<p align="center">
+  <a href="world/">World Flags</a> •
+  <a href="us/">US State Flags</a> •
+  <a href="#usage-examples">Usage Examples</a> •
+  <a href="#url-pattern">API Reference</a>
+</p>
 
 ---
 
@@ -219,14 +222,11 @@ While we strive to keep all flag data as accurate and up-to-date as possible, we
 
 ---
 
-<div align="center">
-
-### Built by [DoDev](https://do.dev)
-
-We build developer tools and free resources for the community.
-
-[GitHub](https://github.com/dodotdev) | [Website](https://do.dev) | [Contact](mailto:help@do.dev)
-
-*This is a free, open resource for developers and designers.*
-
-</div>
+<h3 align="center">Built by <a href="https://do.dev">DoDev</a></h3>
+<p align="center">We build developer tools and free resources for the community.</p>
+<p align="center">
+  <a href="https://github.com/dodotdev">GitHub</a> •
+  <a href="https://do.dev">Website</a> •
+  <a href="mailto:help@do.dev">Contact</a>
+</p>
+<p align="center"><em>This is a free, open resource for developers and designers.</em></p>
