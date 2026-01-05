@@ -1,0 +1,72 @@
+---
+---
+
+@import "jekyll-theme-cayman";
+
+/* Reduce header size to ~2/3 */
+.page-header {
+  padding: 1.5rem 1rem;
+}
+
+.project-name {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-tagline {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Hide the default "View on GitHub" button */
+.btn {
+  display: none;
+}
+
+/* Social icons container */
+.social-icons {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.social-icons a {
+  margin-left: 0.75rem;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+/* Make header position relative for absolute positioning of icons */
+.page-header {
+  position: relative;
+}
+
+@media screen and (max-width: 42em) {
+  .project-name {
+    font-size: 1.8rem;
+  }
+
+  .project-tagline {
+    font-size: 1rem;
+  }
+
+  .social-icons {
+    top: 0.75rem;
+    right: 1rem;
+  }
+
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+}
