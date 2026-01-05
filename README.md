@@ -1,72 +1,49 @@
-# Flag Assets Library
+<div align="center">
 
-A comprehensive collection of world country flags and US state flags, available as SVG vectors and PNG images at multiple resolutions. All assets are served via **https://flags.telco.dev** for fast, reliable access.
+# flags.telco.dev
+
+### Free Flag Assets for Developers
+
+**327 world and US flags** in SVG and PNG formats, ready to use in your projects.
+
+[![World Flags](https://flags.telco.dev/world/us/us_48x32.png)](world/us/)
+[![World Flags](https://flags.telco.dev/world/gb/gb_48x32.png)](world/gb/)
+[![World Flags](https://flags.telco.dev/world/jp/jp_48x32.png)](world/jp/)
+[![World Flags](https://flags.telco.dev/world/de/de_48x32.png)](world/de/)
+[![World Flags](https://flags.telco.dev/world/fr/fr_48x32.png)](world/fr/)
+[![World Flags](https://flags.telco.dev/world/br/br_48x32.png)](world/br/)
+[![World Flags](https://flags.telco.dev/world/ca/ca_48x32.png)](world/ca/)
+[![World Flags](https://flags.telco.dev/world/au/au_48x32.png)](world/au/)
+
+[World Flags](world/) | [US State Flags](us/) | [Usage Examples](#usage-examples) | [API Reference](#url-pattern)
+
+</div>
+
+---
 
 ## Quick Start
 
-Every flag folder contains a JSON file with metadata and direct URLs:
+Embed a flag directly in your HTML:
 
-```json
-{
-  "name": "Japan",
-  "abbreviation": "JP",
-  "files": {
-    "svg": "https://flags.telco.dev/world/jp/jp.svg",
-    "png_48x32": "https://flags.telco.dev/world/jp/jp_48x32.png",
-    "png_120x80": "https://flags.telco.dev/world/jp/jp_120x80.png",
-    "png_240x160": "https://flags.telco.dev/world/jp/jp_240x160.png",
-    "png_480x320": "https://flags.telco.dev/world/jp/jp_480x320.png",
-    "png_960x640": "https://flags.telco.dev/world/jp/jp_960x640.png"
-  }
-}
+```html
+<img src="https://flags.telco.dev/world/jp/jp_240x160.png" alt="Japan">
 ```
 
-## Repository Structure
+Or fetch metadata via JSON:
 
-```
-├── world/                    # 271 country/territory flags
-│   ├── us/
-│   │   ├── us.svg
-│   │   ├── us.json          # Metadata + URLs
-│   │   ├── us_48x32.png
-│   │   ├── us_120x80.png
-│   │   ├── us_240x160.png
-│   │   ├── us_480x320.png
-│   │   └── us_960x640.png
-│   ├── gb/
-│   ├── jp/
-│   └── ...
-│
-└── us/                       # 56 US state/territory flags
-    ├── tx/
-    │   ├── tx.svg
-    │   ├── tx.json          # Metadata + URLs
-    │   ├── tx_48x32.png
-    │   ├── tx_120x80.png
-    │   ├── tx_240x160.png
-    │   ├── tx_480x320.png
-    │   └── tx_960x640.png
-    ├── ca/
-    ├── ny/
-    └── ...
+```javascript
+const response = await fetch('https://flags.telco.dev/world/jp/jp.json');
+const flag = await response.json();
+// { name: "Japan", abbreviation: "JP", files: { svg: "...", png_48x32: "...", ... } }
 ```
 
 ## What's Included
 
-### World Flags (`/world/`)
-
-**271 flags** including:
-- All UN member states
-- Territories and dependencies
-- Regional flags (England, Scotland, Wales, Catalonia, etc.)
-- International organizations (EU, UN, ASEAN, Arab League, etc.)
-
-### US State Flags (`/us/`)
-
-**56 flags** including:
-- 50 US states
-- District of Columbia
-- 5 US territories (American Samoa, Guam, Northern Mariana Islands, Puerto Rico, U.S. Virgin Islands)
+| Collection | Count | Description |
+|------------|-------|-------------|
+| [World Flags](world/) | 271 | All UN member states, territories, regional flags, and international organizations |
+| [US State Flags](us/) | 56 | 50 states, DC, and 5 US territories |
+| **Total** | **327** | Each with SVG + 5 PNG sizes + JSON metadata |
 
 ## File Formats
 
@@ -81,10 +58,7 @@ Each flag is available in 6 formats:
 | PNG 480x320 | 480 × 320 px | Medium display |
 | PNG 960x640 | 960 × 640 px | Large display, print |
 
-All PNG files feature:
-- Transparent backgrounds
-- Consistent dimensions across all flags
-- Flags proportionally scaled and centered
+All PNG files feature transparent backgrounds with flags proportionally scaled and centered.
 
 ## Usage Examples
 
@@ -101,7 +75,6 @@ All PNG files feature:
 ### Fetch Metadata via JSON
 
 ```javascript
-// Fetch flag metadata
 const response = await fetch('https://flags.telco.dev/world/jp/jp.json');
 const flag = await response.json();
 
@@ -123,7 +96,7 @@ Where:
 
 ## Country Codes (ISO 3166-1 alpha-2)
 
-World flags use standard ISO 3166-1 alpha-2 country codes:
+World flags use standard ISO 3166-1 alpha-2 country codes. Below is a sample of common codes. For the complete list of all 271 flags, browse the [`world/`](world/) directory.
 
 | Code | Country | Code | Country | Code | Country |
 |------|---------|------|---------|------|---------|
@@ -136,7 +109,7 @@ World flags use standard ISO 3166-1 alpha-2 country codes:
 | cn | China | nz | New Zealand | us | United States |
 | de | Germany | ph | Philippines | vn | Vietnam |
 | es | Spain | pl | Poland | za | South Africa |
-| fr | France | pt | Portugal | ... | [271 total] |
+| fr | France | pt | Portugal | | |
 | in | India | ru | Russia | | |
 | it | Italy | sa | Saudi Arabia | | |
 
@@ -216,26 +189,44 @@ interface FlagMetadata {
 }
 ```
 
-## Statistics
+## Repository Structure
 
-| Category | Count |
-|----------|-------|
-| World Flags | 271 |
-| US State Flags | 56 |
-| **Total Flags** | **327** |
-| Files per Flag | 7 (1 SVG + 5 PNG + 1 JSON) |
-| **Total Files** | **2,289** |
+```
+├── world/                    # 271 country/territory flags
+│   ├── us/
+│   │   ├── us.svg
+│   │   ├── us.json          # Metadata + URLs
+│   │   ├── us_48x32.png
+│   │   ├── us_120x80.png
+│   │   ├── us_240x160.png
+│   │   ├── us_480x320.png
+│   │   └── us_960x640.png
+│   ├── gb/
+│   ├── jp/
+│   └── ...
+│
+└── us/                       # 56 US state/territory flags
+    ├── tx/
+    │   ├── tx.svg
+    │   ├── tx.json
+    │   └── ...
+    └── ...
+```
 
 ## Disclaimer
 
 While we strive to keep all flag data as accurate and up-to-date as possible, we cannot guarantee its accuracy or completeness. Flags and their designs may change over time. Use of these assets is at your own risk.
 
-## License
+---
 
-This repository is a public resource for artists and developers.
+<div align="center">
 
-## Contributing
+### Built by [DoDev](https://do.dev)
 
-For errors, corrections, or suggestions:
-- Open a GitHub issue
-- Email: help@do.dev
+We build developer tools and free resources for the community.
+
+[GitHub](https://github.com/dodotdev) | [Website](https://do.dev) | [Contact](mailto:help@do.dev)
+
+*This is a free, open resource for developers and designers.*
+
+</div>
