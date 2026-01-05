@@ -1,6 +1,4 @@
-<p align="center">
-  <h1 align="center">flags.telco.dev</h1>
-</p>
+<h1 align="center">flags.telco.dev</h1>
 <h3 align="center">Free Flag Assets for Developers</h3>
 <p align="center">
   <strong>327 world and US flags</strong> in SVG and PNG formats, ready to use in your projects.
