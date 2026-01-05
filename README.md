@@ -1,22 +1,22 @@
 # Flag Assets Library
 
-A comprehensive collection of world country flags and US state flags, available as SVG vectors and PNG images at multiple resolutions. Each flag includes a JSON metadata file with direct GitHub URLs for easy integration.
+A comprehensive collection of world country flags and US state flags, available as SVG vectors and PNG images at multiple resolutions. All assets are served via **https://flags.telco.dev** for fast, reliable access.
 
 ## Quick Start
 
-Every flag folder contains a JSON file with metadata and direct download URLs:
+Every flag folder contains a JSON file with metadata and direct URLs:
 
 ```json
 {
   "name": "Japan",
   "abbreviation": "JP",
   "files": {
-    "svg": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/jp/jp.svg",
-    "png_48x32": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/jp/jp_48x32.png",
-    "png_120x80": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/jp/jp_120x80.png",
-    "png_240x160": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/jp/jp_240x160.png",
-    "png_480x320": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/jp/jp_480x320.png",
-    "png_960x640": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/jp/jp_960x640.png"
+    "svg": "https://flags.telco.dev/world/jp/jp.svg",
+    "png_48x32": "https://flags.telco.dev/world/jp/jp_48x32.png",
+    "png_120x80": "https://flags.telco.dev/world/jp/jp_120x80.png",
+    "png_240x160": "https://flags.telco.dev/world/jp/jp_240x160.png",
+    "png_480x320": "https://flags.telco.dev/world/jp/jp_480x320.png",
+    "png_960x640": "https://flags.telco.dev/world/jp/jp_960x640.png"
   }
 }
 ```
@@ -24,7 +24,6 @@ Every flag folder contains a JSON file with metadata and direct download URLs:
 ## Repository Structure
 
 ```
-flags/
 ├── world/                    # 271 country/territory flags
 │   ├── us/
 │   │   ├── us.svg
@@ -54,7 +53,7 @@ flags/
 
 ## What's Included
 
-### World Flags (`/flags/world/`)
+### World Flags (`/world/`)
 
 **271 flags** including:
 - All UN member states
@@ -62,7 +61,7 @@ flags/
 - Regional flags (England, Scotland, Wales, Catalonia, etc.)
 - International organizations (EU, UN, ASEAN, Arab League, etc.)
 
-### US State Flags (`/flags/us/`)
+### US State Flags (`/us/`)
 
 **56 flags** including:
 - 50 US states
@@ -93,17 +92,17 @@ All PNG files feature:
 
 ```html
 <!-- World flag (Germany) -->
-<img src="https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/de/de_240x160.png" alt="Germany">
+<img src="https://flags.telco.dev/world/de/de_240x160.png" alt="Germany">
 
 <!-- US state flag (California) -->
-<img src="https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/us/ca/ca_240x160.png" alt="California">
+<img src="https://flags.telco.dev/us/ca/ca_240x160.png" alt="California">
 ```
 
 ### Fetch Metadata via JSON
 
 ```javascript
 // Fetch flag metadata
-const response = await fetch('https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/jp/jp.json');
+const response = await fetch('https://flags.telco.dev/world/jp/jp.json');
 const flag = await response.json();
 
 console.log(flag.name);           // "Japan"
@@ -114,7 +113,7 @@ console.log(flag.files.svg);      // Full SVG URL
 ### URL Pattern
 
 ```
-https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/{type}/{code}/{code}.{format}
+https://flags.telco.dev/{type}/{code}/{code}.{format}
 
 Where:
   {type}   = "world" or "us"
@@ -207,12 +206,12 @@ interface FlagMetadata {
   name: string;           // Full name (e.g., "United States", "Texas")
   abbreviation: string;   // Uppercase code (e.g., "US", "TX")
   files: {
-    svg: string;          // Raw GitHub URL to SVG
-    png_48x32: string;    // Raw GitHub URL to 48x32 PNG
-    png_120x80: string;   // Raw GitHub URL to 120x80 PNG
-    png_240x160: string;  // Raw GitHub URL to 240x160 PNG
-    png_480x320: string;  // Raw GitHub URL to 480x320 PNG
-    png_960x640: string;  // Raw GitHub URL to 960x640 PNG
+    svg: string;          // URL to SVG
+    png_48x32: string;    // URL to 48x32 PNG
+    png_120x80: string;   // URL to 120x80 PNG
+    png_240x160: string;  // URL to 240x160 PNG
+    png_480x320: string;  // URL to 480x320 PNG
+    png_960x640: string;  // URL to 960x640 PNG
   };
 }
 ```
@@ -226,6 +225,10 @@ interface FlagMetadata {
 | **Total Flags** | **327** |
 | Files per Flag | 7 (1 SVG + 5 PNG + 1 JSON) |
 | **Total Files** | **2,289** |
+
+## Disclaimer
+
+While we strive to keep all flag data as accurate and up-to-date as possible, we cannot guarantee its accuracy or completeness. Flags and their designs may change over time. Use of these assets is at your own risk.
 
 ## License
 

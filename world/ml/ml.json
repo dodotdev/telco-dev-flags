@@ -2,11 +2,11 @@
   "name": "Mali",
   "abbreviation": "ML",
   "files": {
-    "svg": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ml/ml.svg",
-    "png_48x32": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ml/ml_48x32.png",
-    "png_120x80": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ml/ml_120x80.png",
-    "png_240x160": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ml/ml_240x160.png",
-    "png_480x320": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ml/ml_480x320.png",
-    "png_960x640": "https://raw.githubusercontent.com/dodotdev/telco-dev-flags/master/flags/world/ml/ml_960x640.png"
+    "svg": "https://flags.telco.dev/world/ml/ml.svg",
+    "png_48x32": "https://flags.telco.dev/world/ml/ml_48x32.png",
+    "png_120x80": "https://flags.telco.dev/world/ml/ml_120x80.png",
+    "png_240x160": "https://flags.telco.dev/world/ml/ml_240x160.png",
+    "png_480x320": "https://flags.telco.dev/world/ml/ml_480x320.png",
+    "png_960x640": "https://flags.telco.dev/world/ml/ml_960x640.png"
   }
 }
