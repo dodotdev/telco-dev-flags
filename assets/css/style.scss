@@ -3,6 +3,12 @@
 
 @import "jekyll-theme-cayman";
 
+/* Override header gradient to green (matching telco.dev) */
+.page-header {
+  background-color: #16a34a;
+  background-image: linear-gradient(120deg, #14532d, #16a34a, #22c55e);
+}
+
 /* Reduce header size to ~2/3 */
 .page-header {
   padding: 1.5rem 1rem;
